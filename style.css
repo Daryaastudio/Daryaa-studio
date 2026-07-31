@@ -1,1 +1,62 @@
-/* Daryaa Studios Styles */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#111;
+    color:white;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 8%;
+    background:#000;
+}
+
+header h1{
+    color:#d4af37;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+}
+
+.hero{
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:#222;
+}
+
+.hero h2{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+button{
+    padding:15px 40px;
+    font-size:18px;
+    border:none;
+    border-radius:40px;
+    background:#d4af37;
+    cursor:pointer;
+}
+
+button:hover{
+    background:white;
+}
