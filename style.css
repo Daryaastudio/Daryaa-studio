@@ -35,7 +35,14 @@ nav a{
     justify-content:center;
     align-items:center;
     text-align:center;
-    background:#222;
+
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1519741497674-611481863552?w=1800");
+
+    background-size:cover;
+    background-position:center;
+}
 }
 
 .hero h2{
