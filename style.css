@@ -56,14 +56,18 @@ nav a{
 }
 
 button{
-    padding:15px 40px;
+    padding:16px 45px;
     font-size:18px;
-    border:none;
-    border-radius:40px;
     background:#d4af37;
+    color:black;
+    border:none;
+    border-radius:50px;
     cursor:pointer;
+    transition:.3s;
+    font-weight:bold;
 }
 
 button:hover{
     background:white;
+    transform:scale(1.05);
 }
