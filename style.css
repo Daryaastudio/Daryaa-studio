@@ -16,6 +16,9 @@ header{
     align-items:center;
     padding:25px 8%;
     background:#000;
+     position:sticky;
+    top:0;
+    z-index:1000;
 }
 
 header h1{
