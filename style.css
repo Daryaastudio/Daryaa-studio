@@ -52,9 +52,13 @@ nav a{
 }
 
 .hero h2{
-    font-size:64px;
-    margin-bottom:20px;
-    text-shadow:0 4px 15px rgba(0,0,0,.5);
+   font-size:72px;
+
+line-height:1.1;
+
+margin-bottom:25px;
+
+text-shadow:0 5px 25px rgba(0,0,0,.5);
 }
 
 .hero p{
@@ -200,4 +204,22 @@ button:hover{
 
 .contact-btn:hover{
     background:white;
+}
+.hero-buttons{
+    display:flex;
+    gap:20px;
+    margin-top:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.secondary-btn{
+    background:transparent;
+    border:2px solid #d4af37;
+    color:white;
+}
+
+.secondary-btn:hover{
+    background:#d4af37;
+    color:black;
 }
