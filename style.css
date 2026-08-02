@@ -228,3 +228,51 @@ button:hover{
     background:#d4af37;
     color:black;
 }
+/* ===== MOBILE MENU ===== */
+
+.menu-toggle {
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .logo h1 {
+        font-size: 32px;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        background: #000;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        margin: 15px 0;
+        font-size: 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+}
