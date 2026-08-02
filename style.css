@@ -62,8 +62,13 @@ text-shadow:0 5px 25px rgba(0,0,0,.5);
 }
 
 .hero p{
-    font-size:24px;
-    margin-bottom:35px;
+   font-size:22px;
+
+max-width:850px;
+
+line-height:1.7;
+
+margin-bottom:40px;
 }
 
 button{
