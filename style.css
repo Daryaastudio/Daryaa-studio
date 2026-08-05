@@ -35,10 +35,14 @@ nav a{
     text-decoration:none;
     margin-left:25px;
 }
-
-
-    
-
+    .hero{
+    min-height:100vh;
+    padding-top:120px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
     background:
     linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
     url("https://images.unsplash.com/photo-1519741497674-611481863552?w=1800");
