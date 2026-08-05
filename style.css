@@ -17,8 +17,10 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:25px 8%;
-    background:#000;
+    header{
+    padding:15px 6%;
+}
+ background:#000;
      position:sticky;
     top:0;
     z-index:1000;
@@ -34,14 +36,8 @@ nav a{
     margin-left:25px;
 }
 
-.hero{
-    height:90vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:0 20px;
+
+    
 
     background:
     linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
