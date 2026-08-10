@@ -1,6 +1,8 @@
-const menuToggle = document.getElementById("menu-toggle");
-const navMenu = document.getElementById("nav-menu");
-
-menuToggle.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
-});
+const menu=document.getElementById('menuToggle'), nav=document.getElementById('navMenu');
+menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',open)});
+document.querySelectorAll('.dropbtn').forEach(btn=>btn.addEventListener('click',e=>{e.stopPropagation();const d=btn.parentElement;document.querySelectorAll('.dropdown').forEach(x=>x!==d&&x.classList.remove('open'));d.classList.toggle('open')}));
+document.querySelectorAll('#navMenu a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');document.querySelectorAll('.dropdown').forEach(x=>x.classList.remove('open'))}));
+document.addEventListener('click',()=>document.querySelectorAll('.dropdown').forEach(x=>x.classList.remove('open')));
+document.querySelectorAll('.culture-grid button').forEach(card=>card.addEventListener('click',()=>{const c=card.dataset.filter;document.getElementById('portfolioMessage').textContent=`${c} wedding and celebration examples — your real gallery can be added here.`;document.querySelectorAll('.gallery article').forEach(item=>item.style.display=item.dataset.category.toLowerCase().includes(c.toLowerCase())?'':'none');document.getElementById('portfolio').scrollIntoView({behavior:'smooth'})}));
+document.getElementById('bookingForm').addEventListener('submit',e=>{e.preventDefault();const name=document.getElementById('name').value,email=document.getElementById('email').value,type=document.getElementById('type').value,date=document.getElementById('date').value||'Not selected',message=document.getElementById('message').value;const subject=encodeURIComponent(`Daryaa Studios Booking Inquiry — ${type}`);const body=encodeURIComponent(`Hello Daryaa Studios,\n\nName: ${name}\nEmail: ${email}\nEvent: ${type}\nDate: ${date}\n\nMessage:\n${message}`);location.href=`mailto:info@daryaastudio.com?subject=${subject}&body=${body}`});
+document.getElementById('year').textContent=new Date().getFullYear();
